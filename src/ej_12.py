@@ -1,4 +1,5 @@
-"""Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase Tu índice de masa corporal es donde es el índice de masa corporal calculado redondeado con dos decimales."""
+"""Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal 
+y lo almacene en una variable, y muestre por pantalla la frase Tu índice de masa corporal es donde es el índice de masa corporal calculado redondeado con dos decimales."""
 
 peso = float(input("Ingrese su peso: "))
 estat = float(input("Ingrese su estatura: "))
@@ -11,4 +12,4 @@ elif estat <= 0:
 
 else:
     IMC = peso / (estat ** 2)
-    print(f"Tu índice de masa corporal es {round(IMC,2)}, es el índice de masa corporal calculado redondeado con dos decimales.")
+    print(f"Tu índice de masa corporal es {IMC}, es el índice de masa corporal calculado redondeado con dos decimales.")
