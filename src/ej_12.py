@@ -12,4 +12,4 @@ elif estat <= 0:
 
 else:
     IMC = peso / (estat ** 2)
-    print(f"Tu índice de masa corporal es {IMC}, es el índice de masa corporal calculado redondeado con dos decimales.")
+    print(f"Tu índice de masa corporal es {round(IMC,2)}, es el índice de masa corporal calculado redondeado con dos decimales.")

@@ -9,4 +9,4 @@ inicial = float(input("Cantidad de dinero depositada en la cuenta de ahorros:"))
 
 for year in range (1,4):
     inicial *= 1 + cuenta
-    print(f"Cantidad de ahorros tras el {year} año: {inicial} euros")
+    print(f"Cantidad de ahorros tras el {year} año: {round(inicial,2)} euros")

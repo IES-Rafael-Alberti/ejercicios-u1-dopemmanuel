@@ -12,4 +12,4 @@ except ValueError:
 celcius = int(input("Ingresa los grados °C: "))
 
 Fahrenheit = celcius * 9 / 5 + 32
-print(celcius," °C son en °F ", Fahrenheit)
+print(f"{celcius} °C son en °F {Fahrenheit}")
