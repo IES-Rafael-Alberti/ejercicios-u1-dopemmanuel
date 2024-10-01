@@ -4,13 +4,27 @@ este formato y muestre por pantalla el número de teléfono sin el prefijo y la 
 
 while True:
     try:
-        n = "+34-913724710-56"
-        n.count("")
-        prefijo = int(input("Coloca el prefijo: "))
-
-        if prefijo != n[0:3]:
-            print("Coloca un prefijo valido")
+        pref = "+34"
+        num = "913724710"
+        ext = "56"
+        
+        #1
+        a = input("Ingresa el prefijo: ")
+        if len(a) != len(pref) or a != pref:
+            print("La extension es incorrecta (￣へ￣()")
         else:
-            print("OK")
-    
-        number = int(input("Ingrese el numero de telefono: "))
+            continue
+        #2
+        b = input("Ingresa el numero del telefono: ")
+        if len(b) != len(num):
+            print("Faltan numeros (￣へ￣()")
+        else:
+            continue
+        #3
+        c = input("Ingresa la extension")
+        if len(c) != len(ext):
+            print("Error, esa extencion no vale (￣へ￣()")
+        else:
+            print(f"{a}-{b}-{c}")
+    except ValueError:
+        print("Carajo!! Solo se pude poner numero aqui (￣へ￣()")
