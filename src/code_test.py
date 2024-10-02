@@ -1,5 +1,8 @@
 """n = str("+34-913724710-56")
-print(n[13:15])"""
+print(n[13:15]
+
+
+
 
 while True:
     try:
@@ -29,4 +32,6 @@ while True:
         print("Carajo!! Solo se pude poner numero aqui (￣へ￣()")
 
 
+
+"""
 
