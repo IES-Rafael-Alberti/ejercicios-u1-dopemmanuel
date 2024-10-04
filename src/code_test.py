@@ -33,5 +33,23 @@ while True:
 
 
 
-"""
 
+euros = float(input("Introduce cuantos € vale el producto: "))
+
+int_a_str = str(euros)
+
+entera, decimal = int_a_str.split(".")
+
+
+
+print(f"{entera} con {decimal} ceintimos")
+
+
+
+
+
+
+texto = input("Introduce un texto: ")
+resultado = texto.split()
+print(resultado)
+"""
