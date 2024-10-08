@@ -20,7 +20,7 @@ def leer_NUMERO():
     print(print(f"La suma de los enteros de 1 a {num} es: {summ}"))
 """
 
-def leer_NUMEROV2():
+def leer_NUMEROV2(): #La funcion principal:
     n = int(input("Introduce un numero: "))
 
     while n < 0:

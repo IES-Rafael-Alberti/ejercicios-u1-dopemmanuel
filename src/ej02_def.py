@@ -1,6 +1,6 @@
 """Escribe un programa para pedirle al usuario las horas de trabajo y el precio por hora y calcule el importe total del servicio."""
 
-def calcular_importe_trabajado():
+def calcular_importe_trabajado(): #La funcion principal:
 
     horas = int(input("Ingresa las horas que has trabajado: "))
     coste = int(input("Ingrese el coste por horas: "))
@@ -9,7 +9,7 @@ def calcular_importe_trabajado():
     multi = horas * coste
 
     # Lo aplicara a la funcion, devolviendolo
-    return horas, coste, multi #Olvide que eso es muy delicado, aqui el orden importa y deben coincidir ↓
+    return horas, coste, multi #Olvide que eso es muy delicado, aqui el orden importa y deben coincidir ↓ y La variable con los datos se transforma en los datos de la funcion:
 
 if __name__ == "__main__":
     print("Este va a organizarte tus horas trabajadas:")
