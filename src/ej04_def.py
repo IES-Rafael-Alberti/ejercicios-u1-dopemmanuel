@@ -9,8 +9,15 @@ except ValueError:
     print("Solo caracter numerico para esto.")
 """
 
+def calculo_grados():
+    celcius = float(input("Ingresa los grados °C: "))
 
-celcius = int(input("Ingresa los grados °C: "))
+    Fahrenheit = celcius * 9 / 5 + 32
+    return celcius, Fahrenheit
 
-Fahrenheit = celcius * 9 / 5 + 32
-print(f"{celcius} °C son en °F {Fahrenheit}")
+if __name__ == "__main__":
+    print("Pedira la temperatura y lo pasara a grados:")
+
+cal_celcius, res_fahrenheit = calculo_grados()
+
+print(f"{cal_celcius:2.2f} °C son en °F {res_fahrenheit:2.2f}")
