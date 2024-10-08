@@ -15,12 +15,11 @@ def calculo_grados():
     Fahrenheit = celcius * 9 / 5 + 32
 
     #La variable con los datos se transforma en los datos de la funcion:
-    return celcius, Fahrenheit
+    total = (f"{celcius:.2f}°C en Fahrenheit son °F {Fahrenheit:.2f}")
+    return total
 
 if __name__ == "__main__":
     print("Pedira la temperatura y lo pasara a grados:")
 
 #Se sobreestituye las variables, osea que usaras otras variables que las representen fuera de la funcion:
-cal_celcius, res_fahrenheit = calculo_grados()
-
-print(f"{cal_celcius:2.2f} °C son en °F {res_fahrenheit:2.2f}")
+print(calculo_grados())
