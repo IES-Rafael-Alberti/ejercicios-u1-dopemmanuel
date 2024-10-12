@@ -11,12 +11,14 @@ para cada una de las expresiones siguientes, intenta adivinar el valor de la exp
 4. 1 + 2 * 5
 
 """
-
+# Dos variables con los datos clave:
 ancho = 17
 alto = 12.0
 
+# Pedira lo que quieres elegir: 
 choose = int(input("Seleciona una de estas operaciones(1-4): "))
 
+# Se usa If y elif para cada opcion:
 if choose == 1 :
     opcion1 = ancho / 2
     print(f"{opcion1} es un float")

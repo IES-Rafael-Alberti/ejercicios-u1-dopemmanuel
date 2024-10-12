@@ -1,16 +1,8 @@
-"""Escribe un programa que le pida al usuario una temperatura en grados Celsius, la convierta a grados Fahrenheit e imprima por pantalla la temperatura convertida.
-try:
-    celcius = int(input("Ingresa los grados °C: "))
+"""Escribe un programa que le pida al usuario una temperatura en grados Celsius, la convierta a grados Fahrenheit e imprima por pantalla la temperatura convertida."""
 
-    
-    Fahrenheit = celcius * 9 / 5 + 32
-    print(celcius," °C son en °F ", Fahrenheit)
-except ValueError:
-    print("Solo caracter numerico para esto.")
-"""
-
-
+# Colocas los grados celcius:
 celcius = int(input("Ingresa los grados °C: "))
 
+# Se calcula con una operacion y te da el resludado:
 Fahrenheit = celcius * 9 / 5 + 32
 print(f"{celcius} °C son en °F {Fahrenheit}")
