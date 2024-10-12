@@ -2,4 +2,4 @@
 
 #Es imposible y esto es lo mas cercano:
 
-print(5 + 5 + 10)
+print(int(input("→ ")) + int(input("→ ")) + int(input("→ ")), end="")
