@@ -3,11 +3,11 @@
 Por ejemplo, si introducen los valores 1, 1 y 10, el programa mostrará en consola exactamente lo siguiente: SERIE => 1-2..3..4..5..6..7..8..9-10
 """
 
-
 # Solicitar el inicial, incremento y el total:
-inicial = int(input("¿En que numero quieres comenzar? →"))
+inicial = int(input("¿En que numero quieres comenzar? → "))
 incremento = int(input("¿Por cuánto quieres incrementa? → "))
 total = int(input("¿Hasta cuánto lo quieres incrementar? → "))
+serie = ""
 
 # Validar que los tres valores sean mayores que cero:
 while incremento <= 0 or total <= 0 or inicial <= 0:
@@ -16,13 +16,19 @@ while incremento <= 0 or total <= 0 or inicial <= 0:
     incremento = int(input("Ingresa el número que quieres incrementar → "))
     total = int(input("¿Hasta cuánto lo quieres incrementar? → "))
 
-serie = str(inicial)
-
-# Al principio use una serie... pero tuve complicaciones y decidi usar el while:
-while inicial < total:
-    inicial = inicial + incremento
-    if inicial <= total:
-        serie = serie + "-" + str(inicial)
+#Usamos un bucle FOR
+for i in range(inicial, total + 1, incremento):
+    if inicial == i:
+        serie += str(i) + "-"
+    elif total == i:
+        serie = serie[:-2:]
+        serie += "-" + str(i)
     else:
-        serie = serie + ".." + str(total)
+        serie += str(i) + ".."
+
+if (total - inicial) % incremento != 0:
+    serie = serie[:-2:]
+    serie += "-" + str(total)
+
+
 print(f"SERIE => {serie}")
