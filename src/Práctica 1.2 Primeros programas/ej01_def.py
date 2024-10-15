@@ -1,12 +1,12 @@
+"""La funcion principal:"""
+def ask_name():
 
-def ask_name(): #La funcion principal:
-
+    """La variable con los datos se transforma en los datos de la funcion:"""
     nom = input("Escribe tu nombre: ")
-    return nom #La variable con los datos se transforma en los datos de la funcion:
+    return nom
 
 if __name__ == "__main__":
-    print("Este programa va a preguntar por tu nombre ") #El titulo... tengo que recordar en colocarlo afuera del if name....
+    print("Este programa va a preguntar por tu nombre ")
 
-
-    name = ask_name() # Y es reutilizada fueda de la funcion.
+    name = ask_name()
     print(f"Hola {name}!!")

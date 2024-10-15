@@ -1,20 +1,18 @@
-"""Escribe un programa para pedirle al usuario las horas de trabajo y el precio por hora y calcule el importe total del servicio."""
+"""Este va a organizarte tus horas trabajadas:"""
 
-def calcular_importe_trabajado(): #La funcion principal:
+def calcular_importe_trabajado():
+    """Pedira los numeros"""
 
     horas = int(input("Ingresa las horas que has trabajado: "))
     coste = int(input("Ingrese el coste por horas: "))
 
-    # El calculo ↓
     multi = horas * coste
+    info = f"Horas de trabajo: {horas}\nCoste por hora: {coste}\nImporte total: {multi}"
+    return info
 
-    # Lo aplicara a la funcion, devolviendolo
-    return horas, coste, multi #Olvide que eso es muy delicado, aqui el orden importa y deben coincidir ↓ y La variable con los datos se transforma en los datos de la funcion:
 
 if __name__ == "__main__":
-    print("Este va a organizarte tus horas trabajadas:")
+    print("Escribe un programa para pedirle al usuario las horas de trabajo"
+          "y el precio por hora y calcule el importe total del servicio.")
 
-    #Se llaman las variables devolvidas fuera... bueno seria su resultado
-    horas_trabajadas, coste_horas, calulo = calcular_importe_trabajado() # el orden debe de coincicir como el de arriba pero no con el mismo nombre,  ↑
-
-    print(f"Horas de trabajo: {horas_trabajadas}\nCoste por hora: {coste_horas}\nImporte total: {calulo}")
+    print(calcular_importe_trabajado())
