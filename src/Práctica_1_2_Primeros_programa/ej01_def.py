@@ -1,12 +1,15 @@
 """La funcion principal:"""
-def ask_name():
+def ask_name(nom):
 
     """La variable con los datos se transforma en los datos de la funcion:"""
-    nom = input("Escribe tu nombre: ")
     return nom
 
-if __name__ == "__main__":
+def main():
+    """Funcion Main"""
     print("Este programa va a preguntar por tu nombre ")
+    nom = input("Escribe tu nombre: ")
+    print(f"Hola {ask_name(nom)}!!")
 
-    name = ask_name()
-    print(f"Hola {name}!!")
+
+if __name__ == "__main__":
+    main()
